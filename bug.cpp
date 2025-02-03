@@ -1,0 +1,1 @@
+std::vector<bool> is a specialized container that uses a bit for each boolean value, which can lead to unexpected behavior when using it with iterators or algorithms that assume a byte-per-element layout.  For example, attempting to use std::find() or other algorithms that traverse the vector element-by-element may not work as expected due to the bitwise storage.
